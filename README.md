@@ -7,8 +7,8 @@ Area (sq ft)
 Number of bedrooms
 
 🔧 Tech Used:  
-     - Python 
-     - Pandas  
+     - Python, 
+     - Pandas,  
      - Scikit-learn  
       
 📊 Output:  
