@@ -7,9 +7,9 @@ Area (sq ft)
 Number of bedrooms
 
 🔧 Tech Used:  
-      Python 
-      Pandas  
-      Scikit-learn  
+     - Python 
+     - Pandas  
+     - Scikit-learn  
       
 📊 Output:  
   Predicts house price based on input features  
