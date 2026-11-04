@@ -1,10 +1,11 @@
-# Step 1: Import Libraries
+# implementation of linear regression to show how to it work
+# Import Libraries
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 
-# Step 2: Load Dataset
+# small dataset used 
 data = {
     'area': [1000, 1500, 1800, 2400, 3000],
     'bedrooms': [2, 3, 3, 4, 4],
@@ -13,14 +14,14 @@ data = {
 
 df = pd.DataFrame(data)
 
-# Step 3: Features & Target
+# Features & Target extraction
 X = df[['area', 'bedrooms']]
 y = df['price']
 
 # Step 4: Train Test Split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
-# Step 5: Model Training
+#  Model Training of on linearRegression
 model = LinearRegression()
 model.fit(X_train, y_train)
 
