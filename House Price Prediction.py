@@ -18,14 +18,14 @@ df = pd.DataFrame(data)
 X = df[['area', 'bedrooms']]
 y = df['price']
 
-# Step 4: Train Test Split
+#  Train Test Split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
 #  Model Training of on linearRegression
 model = LinearRegression()
 model.fit(X_train, y_train)
 
-# Step 6: Prediction (Fixed)
+# Prediction (Fixed)
 new_data = pd.DataFrame([[2000, 3]], columns=['area', 'bedrooms'])
 prediction = model.predict(new_data)
 
